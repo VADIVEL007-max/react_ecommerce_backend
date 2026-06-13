@@ -6,16 +6,17 @@ const cors = require("cors");
 const app= express();
 const prisma = new PrismaClient();
 
-app.use(
-  cors({
-    origin: [
-      "http://localhost:5173",
-      "https://react-ecommerce-nu-rouge.vercel.app"
-    ]
-  })
-);
+// app.use(
+//   cors({
+//     origin: [
+//      
+//       "https://react-ecommerce-nu-rouge.vercel.app"
+//     ]
+//   })
+// );
 app.use(express.json());
 app.use(morgan("dev"));
+app.use(cors());
 
 
 
