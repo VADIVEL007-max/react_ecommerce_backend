@@ -43,13 +43,13 @@ app.get("/products",async(req,res)=>{
 
 
 // get by id all products
-app.get("/products/:productid",async(req,res)=>{
+app.get("/products/:id",async(req,res)=>{
     try {
-        const {productid}=req.params;
+        const {id}=req.params;
 
         const productbyid=await prisma.products.findUnique({
             where:{
-                product_id:productid
+                product_id:id
             }
         });
         res.status(200).json({message:"product fetch sucessfully...", data:productbyid})
