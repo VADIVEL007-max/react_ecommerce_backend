@@ -2,8 +2,8 @@ const { PrismaClient } = require("@prisma/client");
 const prisma = new PrismaClient();
 
 async function main() {
- await prisma.products.createMany({
-  data: [
+  await prisma.products.createMany({
+    data: [
       {
         product_title: "iPhone 15",
         product_price: "79999",
@@ -14,7 +14,9 @@ async function main() {
         product_tag: ["mobile", "apple"],
         product_image: [
           "https://images.unsplash.com/photo-1592750475338-74b7b21085ab",
-          "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9"
+          "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9",
+          "https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb",
+          "https://images.unsplash.com/photo-1565849904461-04a58ad377e0"
         ]
       },
       {
@@ -26,7 +28,10 @@ async function main() {
         product_brand: "Samsung",
         product_tag: ["mobile", "android"],
         product_image: [
-          "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9"
+          "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9",
+          "https://images.unsplash.com/photo-1610945415295-d9bbf067e59c",
+          "https://images.unsplash.com/photo-1580910051074-3eb694886505",
+          "https://images.unsplash.com/photo-1598327105666-5b89351aff97"
         ]
       },
       {
@@ -38,7 +43,10 @@ async function main() {
         product_brand: "OnePlus",
         product_tag: ["mobile"],
         product_image: [
-          "https://images.unsplash.com/photo-1580910051074-3eb694886505"
+          "https://images.unsplash.com/photo-1580910051074-3eb694886505",
+          "https://images.unsplash.com/photo-1598327105666-5b89351aff97",
+          "https://images.unsplash.com/photo-1610945415295-d9bbf067e59c",
+          "https://images.unsplash.com/photo-1605236453806-6ff36851218e"
         ]
       },
       {
@@ -50,7 +58,10 @@ async function main() {
         product_brand: "Apple",
         product_tag: ["laptop"],
         product_image: [
-          "https://images.unsplash.com/photo-1517336714739-489689fd1ca8"
+          "https://images.unsplash.com/photo-1517336714739-489689fd1ca8",
+          "https://images.unsplash.com/photo-1611186871525-5b3b83f7b6df",
+          "https://images.unsplash.com/photo-1541807084-5c52b6b3adef",
+          "https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89"
         ]
       },
       {
@@ -62,7 +73,10 @@ async function main() {
         product_brand: "Dell",
         product_tag: ["laptop"],
         product_image: [
-          "https://images.unsplash.com/photo-1496181133206-80ce9b88a853"
+          "https://images.unsplash.com/photo-1496181133206-80ce9b88a853",
+          "https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89",
+          "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed",
+          "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2"
         ]
       },
       {
@@ -74,7 +88,10 @@ async function main() {
         product_brand: "HP",
         product_tag: ["laptop", "gaming"],
         product_image: [
-          "https://images.unsplash.com/photo-1498050108023-c5249f4df085"
+          "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+          "https://images.unsplash.com/photo-1593642634367-d91a135587b5",
+          "https://images.unsplash.com/photo-1603302576837-37561b2e2302",
+          "https://images.unsplash.com/photo-1542751371-adc38448a05e"
         ]
       },
       {
@@ -86,7 +103,10 @@ async function main() {
         product_brand: "Lenovo",
         product_tag: ["laptop", "gaming"],
         product_image: [
-          "https://images.unsplash.com/photo-1498050108023-c5249f4df085"
+          "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+          "https://images.unsplash.com/photo-1542751371-adc38448a05e",
+          "https://images.unsplash.com/photo-1603302576837-37561b2e2302",
+          "https://images.unsplash.com/photo-1593642634367-d91a135587b5"
         ]
       },
       {
@@ -98,7 +118,10 @@ async function main() {
         product_brand: "ASUS",
         product_tag: ["laptop", "gaming"],
         product_image: [
-          "https://images.unsplash.com/photo-1498050108023-c5249f4df085"
+          "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+          "https://images.unsplash.com/photo-1593642634367-d91a135587b5",
+          "https://images.unsplash.com/photo-1542751371-adc38448a05e",
+          "https://images.unsplash.com/photo-1526657782461-9fe13402a841"
         ]
       },
       {
@@ -110,7 +133,10 @@ async function main() {
         product_brand: "Sony",
         product_tag: ["headphone"],
         product_image: [
-          "https://images.unsplash.com/photo-1505740420928-5e560c06d30e"
+          "https://images.unsplash.com/photo-1505740420928-5e560c06d30e",
+          "https://images.unsplash.com/photo-1546435770-a3e426bf472b",
+          "https://images.unsplash.com/photo-1583394838336-acd977736f90",
+          "https://images.unsplash.com/photo-1484704849700-f032a568e944"
         ]
       },
       {
@@ -122,7 +148,10 @@ async function main() {
         product_brand: "JBL",
         product_tag: ["headphone"],
         product_image: [
-          "https://images.unsplash.com/photo-1484704849700-f032a568e944"
+          "https://images.unsplash.com/photo-1484704849700-f032a568e944",
+          "https://images.unsplash.com/photo-1505740420928-5e560c06d30e",
+          "https://images.unsplash.com/photo-1583394838336-acd977736f90",
+          "https://images.unsplash.com/photo-1546435770-a3e426bf472b"
         ]
       },
       {
@@ -134,7 +163,10 @@ async function main() {
         product_brand: "Boat",
         product_tag: ["headphone"],
         product_image: [
-          "https://images.unsplash.com/photo-1505740420928-5e560c06d30e"
+          "https://images.unsplash.com/photo-1505740420928-5e560c06d30e",
+          "https://images.unsplash.com/photo-1484704849700-f032a568e944",
+          "https://images.unsplash.com/photo-1546435770-a3e426bf472b",
+          "https://images.unsplash.com/photo-1583394838336-acd977736f90"
         ]
       },
       {
@@ -146,7 +178,10 @@ async function main() {
         product_brand: "Nike",
         product_tag: ["shoes"],
         product_image: [
-          "https://images.unsplash.com/photo-1542291026-7eec264c27ff"
+          "https://images.unsplash.com/photo-1542291026-7eec264c27ff",
+          "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa",
+          "https://images.unsplash.com/photo-1608231387042-66d1773d3028",
+          "https://images.unsplash.com/photo-1587563871167-1ee9c731aefb"
         ]
       },
       {
@@ -158,7 +193,10 @@ async function main() {
         product_brand: "Adidas",
         product_tag: ["shoes"],
         product_image: [
-          "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519"
+          "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519",
+          "https://images.unsplash.com/photo-1542291026-7eec264c27ff",
+          "https://images.unsplash.com/photo-1608231387042-66d1773d3028",
+          "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa"
         ]
       },
       {
@@ -170,7 +208,10 @@ async function main() {
         product_brand: "Puma",
         product_tag: ["shoes"],
         product_image: [
-          "https://images.unsplash.com/photo-1542291026-7eec264c27ff"
+          "https://images.unsplash.com/photo-1542291026-7eec264c27ff",
+          "https://images.unsplash.com/photo-1587563871167-1ee9c731aefb",
+          "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519",
+          "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa"
         ]
       },
       {
@@ -182,7 +223,10 @@ async function main() {
         product_brand: "Fastrack",
         product_tag: ["watch"],
         product_image: [
-          "https://images.unsplash.com/photo-1523275335684-37898b6baf30"
+          "https://images.unsplash.com/photo-1523275335684-37898b6baf30",
+          "https://images.unsplash.com/photo-1434494878577-86c23bcb06b9",
+          "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1",
+          "https://images.unsplash.com/photo-1579586337278-3befd40fd17a"
         ]
       },
       {
@@ -194,7 +238,10 @@ async function main() {
         product_brand: "Fire-Boltt",
         product_tag: ["watch"],
         product_image: [
-          "https://images.unsplash.com/photo-1434494878577-86c23bcb06b9"
+          "https://images.unsplash.com/photo-1434494878577-86c23bcb06b9",
+          "https://images.unsplash.com/photo-1523275335684-37898b6baf30",
+          "https://images.unsplash.com/photo-1579586337278-3befd40fd17a",
+          "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1"
         ]
       },
       {
@@ -206,7 +253,10 @@ async function main() {
         product_brand: "Samsung",
         product_tag: ["tv"],
         product_image: [
-          "https://images.unsplash.com/photo-1593359677879-a4bb92f829d1"
+          "https://images.unsplash.com/photo-1593359677879-a4bb92f829d1",
+          "https://images.unsplash.com/photo-1461151304267-38535e780c79",
+          "https://images.unsplash.com/photo-1558618666-fcd25c85cd64",
+          "https://images.unsplash.com/photo-1548690312-e3b507d8c110"
         ]
       },
       {
@@ -218,7 +268,10 @@ async function main() {
         product_brand: "LG",
         product_tag: ["tv"],
         product_image: [
-          "https://images.unsplash.com/photo-1461151304267-38535e780c79"
+          "https://images.unsplash.com/photo-1461151304267-38535e780c79",
+          "https://images.unsplash.com/photo-1593359677879-a4bb92f829d1",
+          "https://images.unsplash.com/photo-1548690312-e3b507d8c110",
+          "https://images.unsplash.com/photo-1558618666-fcd25c85cd64"
         ]
       },
       {
@@ -230,7 +283,10 @@ async function main() {
         product_brand: "Realme",
         product_tag: ["mobile"],
         product_image: [
-          "https://images.unsplash.com/photo-1580910051074-3eb694886505"
+          "https://images.unsplash.com/photo-1580910051074-3eb694886505",
+          "https://images.unsplash.com/photo-1598327105666-5b89351aff97",
+          "https://images.unsplash.com/photo-1605236453806-6ff36851218e",
+          "https://images.unsplash.com/photo-1610945415295-d9bbf067e59c"
         ]
       },
       {
@@ -242,7 +298,10 @@ async function main() {
         product_brand: "Acer",
         product_tag: ["laptop"],
         product_image: [
-          "https://images.unsplash.com/photo-1496181133206-80ce9b88a853"
+          "https://images.unsplash.com/photo-1496181133206-80ce9b88a853",
+          "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2",
+          "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed",
+          "https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89"
         ]
       }
     ]
